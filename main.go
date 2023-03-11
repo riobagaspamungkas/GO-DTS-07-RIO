@@ -6,15 +6,6 @@ import (
 	"strconv"
 )
 
-// func isRussianUpper(text string) bool {
-//     for _, r := range []rune(text) {
-//         if r < '\u0410' || r > '\u042F' {
-//             return false
-//         }
-//     }
-//     return true
-// }
-
 func main()  {
 	i := 21
 	var j bool = true
