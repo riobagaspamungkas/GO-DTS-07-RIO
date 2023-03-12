@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"unicode"
 	"strconv"
+	"strings"
 )
 
 func main()  {
@@ -33,12 +34,12 @@ func main()  {
 	fmt.Println(strconv.FormatInt(angka, 8))
 	
 	// menampilkan nilai base 16 : f
-	fmt.Printf("Nilai base 16 : ")
-	fmt.Println(strconv.FormatInt(15, 16))
+	karakter1 := strconv.FormatInt(15, 16)
+	fmt.Println("Nilai base 16 :", karakter1)
 	
 	// menampilkan nilai base 16 : F13
-	fmt.Printf("Nilai base 16 : ")
-	fmt.Println(strconv.FormatInt(3859, 16))
+	karakter2 := strconv.FormatInt(3859, 16)
+	fmt.Printf("Nilai base 16 : %s \n", strings.ToUpper(karakter2))
 
 	// menampilkan unicode karakter Я
 	fmt.Printf("Nilai karakter unicode Я adalah %U \n", 'Я')
