@@ -4,10 +4,20 @@ import (
 	"fmt"
 )
 
-func main()  {
-	i := 21
+func main() {
+	for i := 0; i < 5; i++ {
+		fmt.Println("Nilai i =", i)
+	}
 
-	// menampilkan tipe data dari variabel i
-	fmt.Printf("Nilai i adalah %v \n", i)
-	fmt.Printf("Tipe data i adalah %T \n", i)
+	for j := 0; j < 5; j++ {
+		fmt.Println("Nilai j =", j)
+	}
+
+	fmt.Println("========================")
+	//
+	fmt.Println("========================")
+
+	for j := 6; j <= 10; j++ {
+		fmt.Println("Nilai j =", j)
+	}
 }
